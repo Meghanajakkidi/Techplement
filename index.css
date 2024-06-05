@@ -1,0 +1,93 @@
+body{
+    background-image: linear-gradient(to right,lightskyblue,#1E90FF);
+}
+.dashboard{
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to right,lightblue, whitesmoke);
+    color: #0000ff;
+}
+.weatherform{
+    text-align: center;
+    margin-top: 3%;
+}
+.searchinput{
+    width: 500px;
+    height: 30px;
+    border-radius: 50px;
+    border: 2px solid skyblue;
+    text-align: center;
+}
+.sumbitbtn{
+    width: 80px;
+    height: 40px;
+    background-color: green;
+    border: 1px solid black;
+    margin-top: 2%;
+    border-radius: 10px;
+}
+.sumbitbtn:hover{
+     background-color: transparent;
+}
+.citycard{
+    width: 500px;
+    height: 600px;
+    border: 1px solid #0000ff;
+    box-shadow: 2px 2px 2px lightblue;
+    margin-left: 33%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.citycard:hover{
+    transform:scale(1.5,1);
+}
+
+.cityDisplay, .tempDisplay{
+    font-size: 3.5rem;
+    font-weight: bold;
+    color:#0000ff;
+    margin-bottom: 25px;
+}
+.humidityDisplay{
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #0000ff;
+}
+.descDisplay{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2rem;
+    color: #0000ff;
+}
+.weatherEmoji{
+    margin: 0;
+    font-size: 4rem;
+    color: black;
+}
+.errorDisplay{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #0000ff;
+}
+@media(max-width:500px){
+      .weatherform{
+           display: flex;
+      }
+      .dashboard{
+        display: flex;
+        flex-direction: column;
+        color: black;
+        font-size: 10px;
+        height:60px ;
+      }
+      .citycard{
+        width: 300px;
+        height: 400px;
+      }
+      .cityDisplay, .tempDisplay,.humidityDisplay,.humidityDisplay,.weatherEmoji,.errorDisplay{
+        font-size: 20px;
+      }
+}
